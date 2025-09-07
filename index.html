@@ -1,27 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind + daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
-     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <title>English-Janala</title>
 </head>
-<body>
-    <header>
-        <nav>
 
-        </nav>
+<body>
+    <header class="">
+        <!-- Header start -->
+        <div class="navbar bg-[#badeff42] shadow-sm px-[60px]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li>
+                            <button class=" btn-outline btn-primary"><i class="fa-solid fa-question"></i>FAQ</button>
+                        </li>
+                        <li>
+                            <button class=" btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i>Learn</button>
+                        </li>
+                        <li>
+                            <button class=" btn-outline btn-primary"><i
+                                    class="fa-solid fa-right-from-bracket"></i>Logout</button>
+                        </li>
+                    </ul>
+                </div>
+                <img src="assets/logo.svg" alt="" srcset="">
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 space-x-3.5">
+                    <li>
+                        <button class="btn btn-outline btn-primary"><i class="fa-solid fa-question"></i>FAQ</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i>Learn</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-primary"><i
+                                class="fa-solid fa-right-from-bracket"></i>Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class=" flex justify-between items-center py-12 w-11/12 mx-auto ">
+                <div class="content w-[60%] space-y-3">
+                    <h2 class="text-[#00BCFF] font-bold text-[48px]">English <span class="text-[#18181B]">is Easy!!</span></h2>
+                    <p class="text-[#18181B] text-[24px] font-bangla w-[95%]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                    <fieldset class="flex flex-col gap-5">
+                        <input type="text" placeholder="Enter Your Name" class="input" />
+                        <input type="password" placeholder=".................." class="input" />
+                        <button class="btn btn-active btn-primary w-[15%] py-5">Get Started</button>
+                    </fieldset>
+                </div>
+                <div class="image w-[40%] flex justify-center lg:justify-end">
+                    <img src="assets/hero-section.svg" class="w-[100%] " alt="">
+                </div>
+            </div>
+        </section>
     </header>
+    <!-- Banner section start -->
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
+    <!-- Js -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
