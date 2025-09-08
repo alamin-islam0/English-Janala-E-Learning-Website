@@ -61,6 +61,13 @@ const displayWordDetails = (word) => {
                                     <button class="bg-[#EDF7FF] border-[#D7E4EF] text-black font-normal btn btn-active btn-primary">${word.synonyms[2]}</button>
 
                                 </div>
+
+                                <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
     `;
   document.getElementById("my_modal_5").showModal();
 };
